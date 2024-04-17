@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização Atual e Trajeto no Google Maps</title>
+    <link rel="stylesheet" href="css/localstyle.css">
+</head>
+<body>
+    <h1>Localização / Trajeto</h1>
+    <div id="map"></div>
+
+    <h2>Coordenadas</h2>
+    <table id="locationTable">
+        <tr>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+    </table>
+
+    <div class="toggle-switch" id="locationToggle">
+        <span class="switch"></span>
+        <span id="locationText">Iniciar Localização</span>
+    </div>
+
+    <script src="js/local.js"></script>
+    <!-- Importa a API do Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApoFH-kjzWvsGqg1A5AP-AsOL9ZnVl9dQ&callback=initMap"></script>
+</body>
+</html>
